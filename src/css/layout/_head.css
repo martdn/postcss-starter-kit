@@ -1,0 +1,15 @@
+.head {
+    display: flex;
+
+    transition: background 1s;
+};
+
+.head__inner { background: color($color-red alpha(-10%)); }
+
+.head__contacts {
+    @if 3 < 5 {
+        background: green;
+    } @else {
+        background: blue;
+    }
+};

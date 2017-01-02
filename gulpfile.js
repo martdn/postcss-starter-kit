@@ -1,13 +1,5 @@
-var gulp = require('gulp');
-var postcss = require('gulp-postcss');
+'use strict';
 
-var autoprefixer = require('autoprefixer');
-var cssnext = require('cssnext');
-var precss = require('precss');
+const requireDir = require('require-dir');
 
-gulp.task('css', function () {
-    var processors = [autoprefixer, cssnext, precss ];
-    return gulp.src('./src/*.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('./dist'));
-});
+requireDir('./lib/gulp/tasks', { recurse: true });
