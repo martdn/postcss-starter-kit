@@ -1,5 +1,6 @@
-'use strict';
-
 const requireDir = require('require-dir');
 
-requireDir('./lib/gulp/tasks', { recurse: true });
+global.devBuild = process.env.NODE_ENV !== 'production';
+console.log('env = ' + process.env.NODE_ENV);
+
+requireDir('./gulp/tasks', { recurse: true });

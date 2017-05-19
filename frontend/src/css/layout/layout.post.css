@@ -1,0 +1,30 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-width: 1200px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-red);
+
+    &:hover {
+        color: color(var(--color-red) alpha(-70%));
+    }
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: auto;
+}
