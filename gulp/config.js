@@ -10,6 +10,8 @@ const _css       = 'css/';
 const _img       = 'img/';
 const _fonts     = 'fonts/';
 
+const node_modules     = './node_modules/';
+
 module.exports = {
     path: {
         dist: {
@@ -25,7 +27,9 @@ module.exports = {
             css     : frontend + _src + _css + '**/*.css',
             app     : frontend + 'app/**/*.*',
             twig    : frontend + 'views/**/*.twig'
-        }
+        },
+        node_modules: node_modules,
+        urlPublic   : urlPublic
     },
-    express : frontend + 'app/app.express.js'
+    express : frontend + 'app/app.express.js',
 };

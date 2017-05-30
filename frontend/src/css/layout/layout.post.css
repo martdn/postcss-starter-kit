@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: var(--color-red);
+    color: var(--color-blue);
 
     &:hover {
         color: color(var(--color-red) alpha(-70%));

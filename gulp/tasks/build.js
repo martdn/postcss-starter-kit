@@ -2,6 +2,6 @@
 
 const gulp = require('gulp');
 
-gulp.task('build', [
-    'css:build:postcss'
-]);
+gulp.task('build', ['dist:clean'], function () {
+    gulp.start('js:build', 'css:build');
+});
